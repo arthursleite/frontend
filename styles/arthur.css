@@ -1,14 +1,13 @@
 body {
-  background: #f8ce75;
-  background: linear-gradient(to right, #fcd889, #fcd889);
+  background: #004977;
+  background: linear-gradient(to right, #004977, #004977);
 }
 
 .btn-login {
-  background-color: #c09028;
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
   padding: 0.75rem 1rem;
-
+  
 }
 
 .btn-google {
