@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    display: block;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background-color: #CACCD6;
+    width: 80px;
+    margin: 3px auto 40px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #676767;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    background-color: #004977;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.input-group .btn{
+    border-radius: 0 10px 10px 0;
+}
+
+.foto-carrosel{ 
+    height: 546px;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.menu ul{
+    width: 400px;
+}
+
+.input-search{  
+    height: 38px;
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+.carrinho{
+    font-size: 32px;
+}
+
+.login{
+    background-color: #F5F5F5;
+    padding: 5px 10px;
+    color: #004977;
+    border-radius: 10px;
+}
+
+.login a {
+    color: #004977;
+}
+
+.hero .doar{
+    background-color: #5799fb !important;
+}
+
+.produtos  .carousel-control-next{
+    color: #004977 !important;
+    
+    right: -108px;
+    font-size: 30px;
+}
+
+.produtos  .carousel-control-prev{
+    color: #004977 !important;
+    
+    left: -108px;
+    font-size: 30px;
+
+}
+
+/* basebord */
+footer.basebord {
+    background: #007bff!important;
+}
+
+.info-basebord {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 42px 0px 62px;
+}
+
+.logo-basebord {
+    display: block;
+    width: 200px;
+    height: 100%;
+}
+
+.social-medias-basebord {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-medias-basebord a {
+    display: inline-block;
+}
+
+.contactos-basebord {
+    margin: 35px 0 20px;
+}
+
+.contactos-basebord-list {
+    list-style: none;
+    color: white;
+    line-height: 1.7rem;
+}
+
+.contactos-basebord-list p,
+.contactos-basebord-list p a {
+    font-size: 0.85rem;
+    font-family: Calibri, sans-serif;
+    font-weight: 300;
+    color: #F5F5F5;
+    width: 100%;
+    text-align: center;
+}
+
+.social-medias-title {
+    margin: 3px 0 15px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.social-medias-logo {
+    width: 40px;
+    margin-right: 5px;
+    height: 100%;
+}
+
+.contactos-basebord {
+    margin: 35px 0 20px;
+}
+
+.contactos-basebord-container p {
+    margin-left: 5px;
+    line-height: 1rem;
+}
+
+.contactos-basebord-container {
+    margin-bottom: 10px;
+}
+
+.contactos-basebord-container img,
+.contactos-basebord-container svg {
+    width: 14px;
+    height: 100%;
+    margin-right: 5px;
+    color: #fff;
+}
+
+#image-city {
+    width: 20px;
+}
+
+.copy {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 1.08rem;
+    font-weight: 550;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+}
+
+.copy-symbol {
+    font-size: 10px;
+    position: relative;
+    bottom: 4px;
+    right: 10px;
+}
+
+#more {
+    display: none;
+}
+
+#readButton {
+    background-color: transparent;
+    color: #004977;
+    font-weight: bold;
+}
