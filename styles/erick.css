@@ -99,6 +99,21 @@ ul{
     background-color: #5799fb !important;
 }
 
+.produtos  .carousel-control-next{
+    color: #004977 !important;
+    
+    right: -108px;
+    font-size: 30px;
+}
+
+.produtos  .carousel-control-prev{
+    color: #004977 !important;
+    
+    left: -108px;
+    font-size: 30px;
+
+}
+
 /* basebord */
 footer.basebord {
     background: #007bff!important;
