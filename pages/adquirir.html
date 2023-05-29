@@ -5,20 +5,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" type="image/png" href="../assets/pe-amigo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/arthur.css">
+    <link rel="stylesheet" href="../styles/erick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Adquirir</title>
+
+    <style>
+        body {
+            background: #e2eaef;
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 title="Adquirir">Adquirir</h1><hr>
-    <a href="home-user.html">Home User</a><br>
-    <a href="adquirir.html">Adquirir</a><br>
-    <a href="doar.html">Doar</a><br>
-    <a href="meu-carrinho.html">Meu Carrinho Privado</a><br>
-    <a href="perfil-user.html">Perfil do Usuário</a><hr>
+    <!-- Header -->
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="home-user.html"><img class="logo-img" src="../assets/pe-amigo.png" alt="Logo"></a>
+            </div>
 
-    <p>Opções de escolha</p>
-    <a href="busca-filtragem-privada.html">Achar calçado</a>
-        
+            <div class="input-group mb-3 w-50">
+                <input type="text" class="form-control input-search" placeholder="Buscar...">
+                <div class="input-group-append"><button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+
+            <nav class="menu d-flex">
+                <ul class="menu-list d-flex justify-content-between align-items-center">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="adquirir.html">Adquirir</a></li>
+                    <li class="menu-item"><a href="doar.html">Doar</a></li>
+                    <li class="menu-item login"><a href="perfil-user.html"><img src="../assets/foto-perfil-exemplo.png"
+                                alt="Foto de perfil" width="30px"></a></li>
+                    <li class="carrinho">
+                        <a href="meu-carrinho-public.html" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-cart4"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="text-center m-2">
+            <h2>Adquirir</h2>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="w-50 border p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioH"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadioH"><img src="../assets/homem-boneco.png"
+                                alt="Pe esquerdo" class="rounded mx-auto d-block" height="250px"
+                                width="auto"></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioM"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadioM"><img src="../assets/mulher-boneco.png"
+                                alt="Pe direito" class="rounded mx-auto d-block" height="250px"
+                                width="auto"></label>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <select class="form-select form-select-lg mb-3">
+                        <option selected>Escolha a categoria:</option>
+                        <option value="tenis">Tênis</option>
+                        <option value="sapato-social">Sapato Social</option>
+                        <option value="salto">Salto alto</option>
+                      </select>
+                </div>
+            </div>
+            <div class="w-50 border p-2">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioE"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadioE"><img src="../assets/pe-esquerdo.jpg"
+                            alt="Pe esquerdo" class="img-fluid rounded mx-auto d-block" width="120px"
+                            height="auto"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioD"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadioD"><img src="../assets/pe-direito.jpg"
+                            alt="Pe direito" class="img-fluid rounded mx-auto d-block" width="120px"
+                            height="auto"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioED"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadioED"><img src="../assets/pe-esquerdo-direito.jpg"
+                            alt="Pe esquerdo e direito" class="img-fluid rounded mx-auto d-block" width="120px"
+                            height="auto"></label>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="w-100 border p-3">
+                <div class="form-group w-50">
+                    <h4 class="text-center">Numeração</h4><br>
+                    <label for="formControlRange" class="mb-1">Numeração: 32 - 45</label><br>
+                    <input type="range" class="form-control-range w-75" id="formControlRange" min="32" max="45"
+                        onInput="$('#rangeval').html($(this).val())">
+                    <span id="rangeval">45</span>
+                </div>
+                <a href="busca-filtragem-public.html" class="float-end btn btn-primary m-3">Adquirir</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
