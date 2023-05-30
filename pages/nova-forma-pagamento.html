@@ -1,23 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova forma de pagamento</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/arthur.css">
+        <link rel="stylesheet" href="../styles/erick.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <title>Cadastro</title>
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="index.html"><img class="logo-img" src="../assets/pe-amigo.png" alt="Logo"></a>
+                </div>
+    
+                <div class="input-group mb-3 w-50">
+                    <input type="text" class="form-control input-search" placeholder="Buscar...">
+                    <div class="input-group-append"><button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+    
+                <nav class="menu d-flex">
+                    <ul class="menu-list d-flex justify-content-between align-items-center">
+                        <li class="menu-item"><a href="index.html">Inicio</a></li>
+                        <li class="menu-item"><a href="adquirir.html">Adquirir</a></li>
+                        <li class="menu-item"><a href="doar.html">Doar</a></li>
+                        <li class="menu-item login"><a href="login.html">Login</a></li>
+                        <li class="carrinho">
+                            <a href="meu-carrinho-public.html" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-cart4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto w-50">
+                    <div class="card border-0 shadow rounded-3 my-5">
+                        <div class="card-body p-4 p-sm-5">
+                            <h5 class="card-title text-center mb-5 fw-boldfw-light  fs-5">Adicionar nova forma de pagamento</h5>
+                            <form>
+                                <div class=" form-floating mb-3">
+                                    <div class="form-floating mb-3 col">
+                                        <input type="text" class="form-control" id="floatingNomeRegistro"
+                                            placeholder="Nome do Registro">
+                                        <label for="floatingNomeRegistro">Nome do Registro</label>
+                                    </div>
+                                    <div class="form-floating mb-3 col">
+                                        <input type="text" class="form-control" id="floatingTitularCartão"
+                                            placeholder="Titular do Cartão">
+                                        <label for="floatingTitularCartão">Titular do cartão</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-floating mb-3 col">
+                                        <input type="text" class="form-control" id="floatingNumeroCartão"
+                                            placeholder="Numero do Cartão">
+                                        <label for="floatingNumeroCartão">Numero Cartão</label>
+                                    </div>
+                                    <div class="form-floating mb-3 col">
+                                        <input type="text" class="form-control" id="floatingCVV"
+                                            placeholder="CVV">
+                                        <label for="floatingCVV">CVV</label>
+                                    </div>
+                                    <div class="form-floating mb-3 col">
+                                        <input type="text" class="form-control" id="floatingVencimento"
+                                            placeholder="Vencimento">
+                                        <label for="floatingVencimento">Vencimento</label>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3 col">
+                                    <input type="text" class="form-control" id="floatingEndereçoCobrança"
+                                        placeholder="Endereço de cobrança">
+                                    <label for="floatingEndereçoCobrança">Endereço de cobrança</label>
+                                </div>
+                                <div class="row">
+                                    <div class="form-floating mb-3 col">
+                                        <input type="text" class="form-control" id="floatingNumero"
+                                            placeholder="Numero">
+                                        <label for="floatingNumero">Numero</label>
+                                    </div>
+                                    <div class="form-floating mb-3 col">
+                                        <input type="password" class="form-control" id="floatingComplemento"
+                                            placeholder="Complemento">
+                                        <label for="floatingComplemento">Complemento</label>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <a class="btn btn-primary btn-login text-uppercase fw-bold bg-primary"
+                                        href="perfil-user.html">Adicionar</a>
+                                </div>
+                                <hr class="my-4">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    
+    </html>
 
-<body>
-    <h1 title="Nova forma de pagamento">Nova forma de pagamento</h1><hr>
-    <a href="home-user.html">Home User</a><br>
-    <a href="adquirir.html">Adquirir</a><br>
-    <a href="doar.html">Doar</a><br>
-    <a href="meu-carrinho.html">Meu Carrinho Privado</a><br>
-    <a href="perfil-user.html">Perfil do Usuário</a><hr>
 
-    <p>Campos da forma de pagamento</p>
-    <a href="efetuar-compra.html">Adicionar</a>
+
         
 </body>
 
