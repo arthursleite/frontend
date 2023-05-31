@@ -2,23 +2,144 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalizar compra</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Icon" type="image/png" href="../assets/pe-amigo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/arthur.css">
+  <link rel="stylesheet" href="../styles/erick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Finalizar compra</title>
+  <style>
+    body {
+      background: #e2eaef;
+      font-family: "Open Sans", sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-    <h1 title="Finalizar compra">Finalizar compra</h1><hr>
-    <a href="home-user.html">Home User</a><br>
-    <a href="adquirir.html">Adquirir</a><br>
-    <a href="doar.html">Doar</a><br>
-    <a href="meu-carrinho.html">Meu Carrinho Privado</a><br>
-    <a href="perfil-user.html">Perfil do Usuário</a><hr>
+  <!-- Header -->
+  <header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="home-user.html"><img class="logo-img" src="../assets/pe-amigo.png" alt="Logo"></a>
+      </div>
 
-    <p>Resumo da compra</p>
-    <a href="compras.html">Vem em compras</a>
-        
+      <div class="input-group mb-3 w-50">
+        <input type="text" class="form-control input-search" placeholder="Buscar...">
+        <div class="input-group-append"><button class="btn btn-primary"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+
+      <nav class="menu d-flex">
+        <ul class="menu-list d-flex justify-content-between align-items-center">
+          <li class="menu-item"><a href="index.html">Inicio</a></li>
+          <li class="menu-item"><a href="adquirir.html">Adquirir</a></li>
+          <li class="menu-item"><a href="doar.html">Doar</a></li>
+          <li class="menu-item login"><a href="perfil-user.html"><img src="../assets/foto-perfil-exemplo.png"
+                alt="Foto de perfil" width="30px"></a></li>
+          <li class="carrinho">
+            <a href="meu-carrinho-public.html" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-cart4"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container d-flex justify-content-center">
+    <div class="w-50 pt-3 pb-4">
+      <div>
+        <h2 class="text-center pt-3 pb-2">Resumo da compra</h2>
+      </div>
+      <div>
+        <div class="p-3">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-4"><img src="../assets/salto-1.png" alt="Foto do produto" width="60px"></div>
+            <div class="col-4">
+              <p>Salto alto 39</p>
+            </div>
+            <div class="col-4">
+              <p>1 x R$ 79,90 / Unid.</p>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-4"><img src="../assets/529638.png" alt="Foto do produto" width="60px"></div>
+            <div class="col-4">
+              <p>Sapato social 42</p>
+            </div>
+            <div class="col-4">
+              <p>1 x R$ 59,90 / Unid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-3 pb-3">
+          <div>
+            <h4 class="pt-1 pb-2">Endereço de entrega</h4>
+          </div>
+          <form class="row g-3">
+            <div class="col-md-4">
+              <label for="staticCEP" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="staticCEP" value="73.360.412" disabled readonly>
+            </div>
+            <div class="col-md-4">
+              <label for="staticUF" class="form-label">UF</label>
+              <input type="text" class="form-control" id="staticUF" value="DF" disabled readonly>
+            </div>
+            <div class="col-md-4">
+              <label for="staticCidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="staticCidade" value="Brasília" disabled readonly>
+            </div>
+            <div class="col-md-8">
+              <label for="static" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="staticUF" value="Av. Marechal 49, Planaltina, DF" disabled
+                readonly>
+            </div>
+            <div class="col-md-4">
+              <label for="staticComplemento" class="form-label">Complemento</label>
+              <input type="text" class="form-control" id="staticComplemento" value="Apto 202" disabled readonly>
+            </div>
+          </form>
+        </div>
+        <div class="pt-3 pb-3">
+          <div>
+            <h4>Forma de pagamento</h4>
+          </div>
+          <div class="row">
+            <div class="col-md-8 p-2">
+              <select class="form-select" aria-label="Default select example" disabled>
+                <option>Escolha sua forma de pagamento:</option>
+                <option value="cartao-credito" selected>Cartão de crédito</option>
+                <option value="cartao-debito">Cartão de dédito</option>
+                <option value="boleto">Boleto</option>
+                <option value="pix">Pix</option>
+              </select>
+            </div>
+            <div class="col-md-12 p-2">
+              <p class="m-1">Forma de pagamento:</p>
+              <p class="m-1"><img src="../assets/cartao-credito.png" alt="Icone cartao de credito">Mastercard **** ****
+                **** 1234</p>
+            </div><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-50 pt-3 pb-4 d-flex align-items-center justify-content-center">
+      <div class="p-3">
+        <h4>Compra efetuada com sucesso!</h4>
+        <p>Muito bom! O seu pedido foi computado com sucesso. Verifique suas compras clicando no botão abaixo.
+        </p>
+        <div class="row p-3">
+          <a href="compras.html" class="btn btn-primary">Ver em compras</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
