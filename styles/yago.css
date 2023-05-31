@@ -1,18 +1,93 @@
 body {
-    background-color:#004977  ;
-    background: linear-gradient(to right, #004977 #004977 );
-  }
+  background-color: #004977;
+  background: linear-gradient(to right, #004977 #004977);
+}
+
+
+
+.chat-container {
+  width: 945px;
+  height: 492px;
+  background-color: #dad7d7;
+  overflow-y: scroll;
+  justify-content: center;
+  position: fixed;
+  margin-top: -0.6%;
   
-  .btn-login {
-    background-color: #c09028;
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-    border: none;
-    background-color: #004977;
-  }
+
+
+
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+}
+
+.message.sender {
+  background-color: #a9d6ff;
+}
+
+.message.sender .name {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.message .content {
+  margin-top: 5px;
+}
+
+.input-container {
+  justify-content: center;
+  padding: 0%;
+  border-radius: 2.5%;
+  border: 1px solid #ccc;
+  display: flex;
+  width: 99%;
+  align-items: center;
+  background-color: white;
+  align-self: flex-end;
+}
+
+.input-container input[type="text"]{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1%;
+  top: 60px;
+}
+
+#enviarBtn {
+
+  background-color: #e6e6e6;
+  color: white;
+  border: none;
+  border-radius: 2.5%;
+  cursor: pointer;
+  display: flex;
+  top:50%;
+
+}
+
+#enviarBtn:hover {
+  background-color: #e6e6e6;
+
+}
+
   
- .containe{
-    width: 100px;
-    
- }
+.caixa{
+  width: 303px;
+  height: 150px;
+  background-color: #a9d6ff;
+  align-items: center;
+}
+ 
+.main_container{
+  display: flex;
+}
+
+
+
+
