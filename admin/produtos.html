@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>crud dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!----css3---->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <!--google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+
+        <div class="body-overlay"></div>
+
+        <!-------------------------sidebar------------>
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><span>Administração Pé Amigo</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index.html" class="dashboard"><i class="material-icons">dashboard</i>
+                        <span>Dashboard</span></a>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">how_to_reg</i>Autenticação</a>
+                    <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+                        <li>
+                            <a href="usuarios.html">Usuários</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="material-icons">app_registration</i><span>Registros</span></a>
+                    <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+                        <li>
+                            <a href="perfil.html">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="endereco.html">Endereço</a>
+                        </li>
+                        <li>
+                            <a href="produtos.html">Produtos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="">
+                    <a href="anuncios.html"><i class="material-icons">receipt_long
+                        </i><span>Anúncios</span></a>
+                </li>
+                <li class="">
+                    <a href="doacoes.html"><i class="material-icons">receipt_long</i><span>Doações</span></a>
+                </li>
+
+                <li class="">
+                    <a href="pedido.html"><i class="material-icons">receipt_long</i><span>Pedido</span></a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+
+
+
+        <!--------page-content---------------->
+
+        <div id="content">
+
+            <!--top--navbar----design--------->
+
+            <div class="top-navbar">
+                <div class="xp-topbar">
+
+                    <!-- Start XP Row -->
+                    <div class="row">
+                        <!-- Start XP Col -->
+                        <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
+                            <div class="xp-menubar">
+                                <span class="material-icons text-white">signal_cellular_alt
+                                </span>
+                            </div>
+                        </div>
+                        <!-- End XP Col -->
+
+                        <!-- Start XP Col -->
+                        <div class="col-md-5 col-lg-3 order-3 order-md-2">
+                            <div class="xp-searchbar">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" placeholder="Buscar">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="submit" id="button-addon2"></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End XP Col -->
+
+                        <!-- Start XP Col -->
+                        <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
+                            <div class="xp-profilebar text-right">
+                                <nav class="navbar p-0">
+                                    <ul class="nav navbar-nav flex-row ml-auto">
+                                        <li class="dropdown nav-item active">
+                                            <a href="#" class="nav-link" data-toggle="dropdown">
+                                                <span class="material-icons">notifications</span>
+                                                <span class="notification">4</span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#">15 novos usuários cadastrados</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Recebimento do dia de R$5.000</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Aumento em 20% das visitas do site</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">50 ordens de compras criadas</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" data-toggle="dropdown">
+                                                <img src="img/user.jpg" style="width:40px; border-radius:50%;" />
+                                                <span class="xp-user-live"></span>
+                                            </a>
+                                            <ul class="dropdown-menu small-menu">
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="material-icons">
+                                                            person_outline
+                                                        </span>Perfil
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="material-icons">
+                                                            settings
+                                                        </span>Configurações</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><span class="material-icons">
+                                                            logout</span>Sair</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+
+                                </nav>
+
+                            </div>
+                        </div>
+                        <!-- End XP Col -->
+
+                    </div>
+                    <!-- End XP Row -->
+
+                </div>
+                <div class="xp-breadcrumbbar text-center">
+                    <h4 class="page-title">Bem, vindo(a), admin.</h4>
+                    <ol class="breadcrumb">
+                        <li style="text-decoration: underline" class="breadcrumb-item"><a href="../pages/index.html">Ver site
+                                principal</a></li>
+                    </ol>
+                </div>
+
+            </div>
+
+
+
+            <!--------main-content------------->
+
+            <div class="main-content">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="table-wrapper">
+                            <div class="table-title">
+                                <div class="row">
+                                    <div class="col-sm-6 p-0 d-flex justify-content-lg-start justify-content-center">
+                                        <h2 class="ml-lg-2">Lista de Produtos</h2>
+                                    </div>
+                                    <div class="col-sm-6 p-0 d-flex justify-content-lg-end justify-content-center">
+                                        <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+                                            <i class="material-icons">&#xE147;</i> <span>Adicionar</span></a>
+                                        <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
+                                            <i class="material-icons">&#xE15C;</i> <span>Excluir</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="selectAll">
+                                                <label for="selectAll"></label>
+                                            </span>
+                                        </th>
+                                        <th>USER PROFILE ID</th>
+                                        <th>Nome</th>
+                                        <th>Categoria</th>
+                                        <th>Preço</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                <label for="checkbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>20</td>
+                                        <td>Salto Vermelho Fino</td>
+                                        <td>Salto alto</td>
+                                        <td>R$79,90</td>
+                                        <td>
+                                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
+                                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Delete">&#xE872;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                                                <label for="checkbox2"></label>
+                                            </span>
+                                        </td>
+                                        <td>24</td>
+                                        <td>Sapato Social de Couro</td>
+                                        <td>Sapato Social</td>
+                                        <td>R$99,90</td>
+                                        <td>
+                                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
+                                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Delete">&#xE872;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox3" name="options[]" value="1">
+                                                <label for="checkbox3"></label>
+                                            </span>
+                                        </td>
+                                        <td>28</td>
+                                        <td>Sandália Havaianas Slim</td>
+                                        <td>Sandália</td>
+                                        <td>R$49,90</td>
+                                        <td>
+                                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
+                                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Delete">&#xE872;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox4" name="options[]" value="1">
+                                                <label for="checkbox4"></label>
+                                            </span>
+                                        </td>
+                                        <td>29</td>
+                                        <td>Tênis Converse All Star</td>
+                                        <td>Tênis casual</td>
+                                        <td>R$129,90</td>
+                                        <td>
+                                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
+                                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Delete">&#xE872;</i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox5" name="options[]" value="1">
+                                                <label for="checkbox5"></label>
+                                            </span>
+                                        </td>
+                                        <td>32</td>
+                                        <td>Sapatilha Moleca</td>
+                                        <td>Sapatilha</td>
+                                        <td>R$69,90</td>
+                                        <td>
+                                            <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Edit">&#xE254;</i></a>
+                                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                                                <i class="material-icons" data-toggle="tooltip"
+                                                    title="Delete">&#xE872;</i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="clearfix">
+                                <div class="hint-text">Exibindo <b>5</b> de <b>25</b> entradas</div>
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a href="#">Previous</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Edit Modal HTML -->
+                    <div id="addEmployeeModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Adicionar Produto</h4>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>User</label>
+                                            <select class="form-control" required>
+                                                <option>teste@teste.com.br</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nome</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col">
+                                                <label>Tamanho</label>
+                                                <input type="number" class="form-control" required>
+                                            </div>
+                                            <div class="form-group col">
+                                                <label>Categoria</label>
+                                                <select class="form-control" required>
+                                                    <option>Salto alto</option>
+                                                    <option>Tênis</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col">
+                                                <label>Cuidados</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group col">
+                                                <label>Preço</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                <input type="submit" class="btn btn-success" value="Adicionar">
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Modal HTML -->
+                <div id="editEmployeeModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Editar Produto</h4>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label>User</label>
+                                        <select class="form-control" required>
+                                            <option>teste@teste.com.br</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col">
+                                            <label>Tamanho</label>
+                                            <input type="number" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label>Categoria</label>
+                                            <select class="form-control" required>
+                                                <option>Salto alto</option>
+                                                <option>Tênis</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col">
+                                            <label>Cuidados</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label>Preço</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                    <input type="submit" class="btn btn-info" value="Salvar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Delete Modal HTML -->
+                <div id="deleteEmployeeModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Excluir produto?</h4>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza de que deseja excluir esse produto?</p>
+                                    <p class="text-warning"><small>
+                                            Essa ação não pode ser desfeita.</small></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
+                                    <input type="submit" class="btn btn-danger" value="Apagar">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!---footer---->
+
+
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer-in">
+                    <p class="mb-0">&copy 2023 Pé amigo - All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+
+    <!----------html code compleate----------->
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".xp-menubar").on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+            });
+
+            $(".xp-menubar,.body-overlay").on('click', function () {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+
+        });
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
