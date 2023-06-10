@@ -118,7 +118,8 @@
                     <li class="menu-item"><a href="index.html">Inicio</a></li>
                     <li class="menu-item"><a href="adquirir.html">Adquirir</a></li>
                     <li class="menu-item"><a href="doar.html">Doar</a></li>
-                    <li class="menu-item login"><a href="perfil-user.html"><img src="../assets/foto-perfil-exemplo.png" alt="Foto de perfil" width="30px"></a></li>
+                    <li class="menu-item login"><a href="perfil-user.html"><img src="../assets/foto-perfil-exemplo.png"
+                                alt="Foto de perfil" width="30px"></a></li>
                     <li class="carrinho">
                         <a href="meu-carrinho-public.html" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-cart4"></i>
@@ -130,23 +131,49 @@
     </header>
 
 
-    <div class="z-3 position-fixed bottom-0 end-0 px-5 pb-3">
-        <a href="meu-carrinho.html" class="botao_chat">
-          <i class="bi bi-chat-text h1"></i>
-        </a>
-      </div>
-
     <div class="d-flex container justify-content-around">
-        <div class="w-25">
-            <img src="../assets/foto-perfil-exemplo.png" alt="Icone de foto de perfil"
-                class="w-75">
-            <a href="index.html" class="btn btn-primary btn-lg p-2 m-2">Excluir conta</a>
+        <div class="profile-nav col-md-3">
+            <div class="panel">
+                <div class="user-heading round">
+                    <a href="#">
+                        <img src="../assets/foto-perfil-exemplo.png" alt="Icone de foto de perfil">
+                    </a>
+                    <h1>Marcos Arthur</h1>
+                    <p>marcosarthur@yago.com.br</p>
+                </div>
+    
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active">
+                        <a href="#"><i class="bi bi-person-fill"></i>
+                            </i>Dados Perfil</a>
+                    </li>
+                    <li>
+                        <a href="endereco.html"><i class="bi bi-geo-alt-fill"></i>
+                            </i>Endereços</a>
+                    </li>
+                    <li>
+                        <a href="anuncios.html"> 
+                            <i class="bi bi-file-text"></i>Meus Anúncios<span
+                                class="label label-warning pull-right r-activity"></span></a>
+                            </li>
+                    <li>
+                        <a href="formas-pagamento.html"> <i class="bi bi-credit-card"></i>Formas de Pagamento</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="bi bi-heart-fill"></i>Favoritos</a>
+                    </li>
+                    <li>
+                        <a href="index.html"> <i class="bi bi-box-arrow-left"></i>Sair</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="w-75 p-3">
+        <div class="w-75 p-5">
             <form>
                 <div class="form-group">
                     <label for="floatingNomeCompleto" class="mt-1 mb-1 mr-1">Nome Completo</label>
-                    <input type="text" class="form-control" id="floatingNomeCompleto" placeholder="Ex.: João da Silva Santos">
+                    <input type="text" class="form-control" id="floatingNomeCompleto"
+                        placeholder="Ex.: João da Silva Santos">
                 </div>
                 <div class="form-group">
                     <label for="floatingEmail" class="mt-1 mb-1 mr-1">Email</label>
@@ -170,7 +197,10 @@
                     <input type="text" class="form-control" id="floatingEndereco" placeholder="Ex.: Rua Almirante 56">
                 </div>
                 <div>
-                    <input class="btn btn-primary mt-2 float-end" type="submit" value="Submit">
+                    <input class="btn btn-primary mt-2 float-end" type="submit" value="Salvar">
+                </div>
+                <div class="mt-5">
+                    <input class="btn btn-primary mt-5 float-end apagar-conta" type="text" value="Apagar conta">
                 </div>
             </form>
         </div>
