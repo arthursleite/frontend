@@ -114,6 +114,16 @@ ul{
 
 }
 
+.botao_chat{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    border-radius: 50%;
+}
+
 /* basebord */
 footer.basebord {
     background: #007bff!important;
