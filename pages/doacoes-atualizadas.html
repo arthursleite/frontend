@@ -2,145 +2,148 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/erick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/arthur.css">
-    <title>Doações</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Icon" type="image/png" href="../assets/pe-amigo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/erick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../styles/arthur.css">
+  <title>Doações</title>
 
-    <style>
-        body {
-            background: #e2eaef;
-            font-family: "Open Sans", sans-serif;
-        }
+  <style>
+    body {
+      background: #e2eaef;
+      font-family: "Open Sans", sans-serif;
+    }
 
-        .vgr-cards .card {
-            display: flex;
-            flex-flow: wrap;
-            flex: 100%;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
+    .vgr-cards .card {
+      display: flex;
+      flex-flow: wrap;
+      flex: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
 
-        .vgr-cards .card .card-img-body {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-        }
+    .vgr-cards .card .card-img-body {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+    }
 
-        .vgr-cards .card .card-img {
-            height: 100%;
-            width: auto;
-            margin-left: 50%;
-            transform: translateX(-50%);
-        }
+    .vgr-cards .card .card-img {
+      height: 100%;
+      width: auto;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
 
-        .vgr-cards .card .card-body {
-            flex: 2;
-            padding: 0 0 0 1.25rem;
-        }
+    .vgr-cards .card .card-body {
+      flex: 2;
+      padding: 0 0 0 1.25rem;
+    }
 
-        @media (max-width: 576px) {
-            .vgr-cards .card .card-body {
-                padding: 0;
-            }
-        }
-    </style>
+    @media (max-width: 576px) {
+      .vgr-cards .card .card-body {
+        padding: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a href="home-user.html"><img class="logo-img" src="../assets/pe-amigo.png" alt="Logo"></a>
-            </div>
+  <!-- Header logada-->
+  <header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="home-user.html"><img class="logo-img" src="../assets/pe-amigo.png" alt="Logo"></a>
+      </div>
 
-            <div class="input-group mb-3 w-50">
-                <input type="text" class="form-control input-search" placeholder="Buscar...">
-                <div class="input-group-append"><button class="btn btn-primary"><i class="bi bi-search"></i></button>
-                </div>
-            </div>
+      <div class="input-group mb-3 w-50">
+        <input type="text" class="form-control input-search" placeholder="Buscar...">
+        <a href="busca-filtragem-privada.html">
+          <div class="input-group-append"><button class="btn btn-primary"><i class="bi bi-search"></i></button>
+          </div>
+        </a>
+      </div>
 
-            <nav class="menu d-flex">
-                <ul class="menu-list d-flex justify-content-between align-items-center">
-                    <li class="menu-item"><a href="home-user.html">Inicio</a></li>
-                    <li class="menu-item"><a href="adquirir.html">Adquirir</a></li>
-                    <li class="menu-item"><a href="doar.html">Doar</a></li>
-                    <li class="menu-item login"><a href="perfil-user.html"><img src="../assets/foto-perfil-exemplo.png"
-                                alt="Foto de perfil" width="30px"></a></li>
-                    <li class="carrinho">
-                        <a href="meu-carrinho-public.html" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-cart4"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <div class="container">
-        <nav class="nav nav-tabs nav-justified mt-3 mb-3">
-            <a class="nav-link" href="anuncios.html" style="color: black;">Meus Anúncios</a>
-            <a class="nav-link" href="compras.html" style="color: black;">Compras</a>
-            <a class="nav-link active" href="doacoes-atualizadas.html">Doações</a>
-        </nav>
-        <div class="card mb-3 card-group vgr-cards">
-            <div class="card">
-                <div class="card-img-body" style="height: 167px">
-                    <img class="card-img" src="/assets/529638.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Nome do produto</h4>
-                    <p class="card-text">Detalhes do produto</p>
-                    <p class=""><img src="../assets/olho-icone.png" alt="Icone olho" width="20px" class="float-start mt-1 me-1">23
-                        interessados
-                    </p>
-                    <a href="chat-doacao.html" class="m-1" style="color: black;"><img src="../assets/chat-icone.png"
-                            alt="Icone chat" width="20px" class="float-start">Mensagens do anúncio de doação</a><br><br>
-                    <a href="doar.html" class="btn btn-primary">Editar anúncio de doação</a>
-                    <a href="home-user.html" class="btn btn-danger">Excluir anúncio de doação</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img-body" style="height: 167px">
-                    <img class="card-img" src="/assets/529638.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Nome do produto</h4>
-                    <p class="card-text">Detalhes do produto</p>
-                    <p class=""><img src="../assets/olho-icone.png" alt="Icone olho" width="20px" class="float-start mt-1 me-1">18
-                        interessados
-                    </p>
-                    <a href="chat-doacao.html" class="m-1" style="color: black;"><img src="../assets/chat-icone.png"
-                            alt="Icone chat" width="20px" class="float-start">Mensagens do anúncio de doação</a><br><br>
-                    <a href="doar.html" class="btn btn-primary">Editar anúncio de doação</a>
-                    <a href="home-user.html" class="btn btn-danger">Excluir anúncio de doação</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img-body" style="height: 167px">
-                    <img class="card-img" src="/assets/529638.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Nome do produto</h4>
-                    <p class="card-text">Detalhes do produto</p>
-                    <p class=""><img src="../assets/olho-icone.png" alt="Icone olho" width="20px" class="float-start mt-1 me-1">41
-                        interessados
-                    </p>
-                    <a href="chat-doacao.html" class="m-1" style="color: black;"><img src="../assets/chat-icone.png"
-                            alt="Icone chat" width="20px" class="float-start">Mensagens do anúncio de doação</a><br><br>
-                    <a href="doar.html" class="btn btn-primary">Editar anúncio de doação</a>
-                    <a href="home-user.html" class="btn btn-danger">Excluir anúncio de doação</a>
-                </div>
-            </div>
-        </div>
+      <nav class="menu d-flex">
+        <ul class="menu-list d-flex justify-content-between align-items-center">
+          <li class="menu-item"><a href="home-user.html">Inicio</a></li>
+          <li class="menu-item"><a href="adquirir.html">Adquirir</a></li>
+          <li class="menu-item"><a href="doar.html">Doar</a></li>
+          <li class="menu-item login"><a href="perfil-user.html"><img src="../assets/foto-perfil-exemplo.png"
+                alt="Foto de perfil" width="30px"></a></li>
+          <li class="carrinho">
+            <a href="meu-carrinho.html" rel="noopener noreferrer">
+              <i class="bi bi-cart4"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+
+  <div class="container">
+    <nav class="nav nav-tabs nav-justified mt-3 mb-3">
+      <a class="nav-link" href="anuncios.html" style="color: black;">Meus Anúncios</a>
+      <a class="nav-link" href="compras.html" style="color: black;">Compras</a>
+      <a class="nav-link active" href="doacoes-atualizadas.html">Doações</a>
+    </nav>
+    <div class="card mb-3 card-group vgr-cards">
+      <div class="card">
+        <div class="card-img-body" style="height: 167px">
+          <img class="card-img" src="/assets/529638.png" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Nome do produto</h4>
+          <p class="card-text">Detalhes do produto</p>
+          <p class=""><img src="../assets/olho-icone.png" alt="Icone olho" width="20px" class="float-start mt-1 me-1">23
+            interessados
+          </p>
+          <a href="chat-doacao.html" class="m-1" style="color: black;"><img src="../assets/chat-icone.png"
+              alt="Icone chat" width="20px" class="float-start">Mensagens do anúncio de doação</a><br><br>
+          <a href="doar.html" class="btn btn-primary">Editar anúncio de doação</a>
+          <a href="home-user.html" class="btn btn-danger">Excluir anúncio de doação</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-body" style="height: 167px">
+          <img class="card-img" src="/assets/529638.png" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Nome do produto</h4>
+          <p class="card-text">Detalhes do produto</p>
+          <p class=""><img src="../assets/olho-icone.png" alt="Icone olho" width="20px" class="float-start mt-1 me-1">18
+            interessados
+          </p>
+          <a href="chat-doacao.html" class="m-1" style="color: black;"><img src="../assets/chat-icone.png"
+              alt="Icone chat" width="20px" class="float-start">Mensagens do anúncio de doação</a><br><br>
+          <a href="doar.html" class="btn btn-primary">Editar anúncio de doação</a>
+          <a href="home-user.html" class="btn btn-danger">Excluir anúncio de doação</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img-body" style="height: 167px">
+          <img class="card-img" src="/assets/529638.png" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Nome do produto</h4>
+          <p class="card-text">Detalhes do produto</p>
+          <p class=""><img src="../assets/olho-icone.png" alt="Icone olho" width="20px" class="float-start mt-1 me-1">41
+            interessados
+          </p>
+          <a href="chat-doacao.html" class="m-1" style="color: black;"><img src="../assets/chat-icone.png"
+              alt="Icone chat" width="20px" class="float-start">Mensagens do anúncio de doação</a><br><br>
+          <a href="doar.html" class="btn btn-primary">Editar anúncio de doação</a>
+          <a href="home-user.html" class="btn btn-danger">Excluir anúncio de doação</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
