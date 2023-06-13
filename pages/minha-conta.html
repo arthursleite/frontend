@@ -51,102 +51,100 @@
           </li>
         </ul>
       </nav>
+            <nav class="menu d-flex">
+                <ul class="menu-list d-flex justify-content-between align-items-center">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="adquirir.html">Adquirir</a></li>
+                    <li class="menu-item"><a href="doar.html">Doar</a></li>
+                    <li class="menu-item login"><a href="perfil-user.html"><img src="../assets/foto-perfil-exemplo.png"
+                                alt="Foto de perfil" width="30px"></a></li>
+                    <li class="carrinho">
+                        <a href="meu-carrinho-public.html" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-cart4"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="d-flex container justify-content-around">
+        <div class="profile-nav col-md-3">
+            <div class="panel">
+                <div class="user-heading round">
+                    <a href="#">
+                        <img src="../assets/foto-perfil-exemplo.png" alt="Icone de foto de perfil">
+                    </a>
+                    <h1>Marcos Arthur</h1>
+                    <p>marcosarthur@yago.com.br</p>
+                </div>
+    
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active">
+                        <a href="#"><i class="bi bi-person-fill"></i>
+                            </i>Dados Perfil</a>
+                    </li>
+                    <li>
+                        <a href="endereco.html"><i class="bi bi-geo-alt-fill"></i>
+                            </i>Endereços</a>
+                    </li>
+                    <li>
+                        <a href="anuncios.html"> 
+                            <i class="bi bi-file-text"></i>Meus Anúncios<span
+                                class="label label-warning pull-right r-activity"></span></a>
+                            </li>
+                    <li>
+                        <a href="formas-pagamento.html"> <i class="bi bi-credit-card"></i>Formas de Pagamento</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="bi bi-heart-fill"></i>Favoritos</a>
+                    </li>
+                    <li>
+                        <a href="index.html"> <i class="bi bi-box-arrow-left"></i>Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-75 p-5">
+            <form>
+                <div class="form-group">
+                    <label for="floatingNomeCompleto" class="mt-1 mb-1 mr-1">Nome Completo</label>
+                    <input type="text" class="form-control" id="floatingNomeCompleto"
+                        placeholder="Ex.: João da Silva Santos">
+                </div>
+                <div class="form-group">
+                    <label for="floatingEmail" class="mt-1 mb-1 mr-1">Email</label>
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="Ex.: exemplo@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="floatingTelefone" class="mt-1 mb-1 mr-1">Telefone</label>
+                    <input type="text" class="form-control" id="floatingTelefone" placeholder="Ex.: (xx) xxxxx-xxxx">
+                </div>
+                <div class="form-group">
+                    <label for="floatingGenero" class="mt-1 mb-1 mr-1">Gênero</label>
+                    <select class="form-control form-control2" id="floatingGenero">
+                        <option selected>Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="floatingEndereco" class="mt-1 mb-1 mr-1">Endereço</label>
+                    <input type="text" class="form-control" id="floatingEndereco" placeholder="Ex.: Rua Almirante 56">
+                </div>
+                <div>
+                    <input class="btn btn-primary mt-2 float-end" type="submit" value="Salvar">
+                </div>
+                <div class="mt-5">
+                    <input class="btn btn-primary mt-5 float-end apagar-conta" type="text" value="Apagar conta">
+                </div>
+            </form>
+        </div>
     </div>
   </header>
 
-
-
-  <div class="d-flex container justify-content-around">
-    <div class="w-25">
-      <img src="../assets/foto-perfil-exemplo.png" alt="Icone de foto de perfil" class="w-75">
-      <a href="index.html" class="btn btn-primary btn-lg p-2 m-2">Excluir conta</a>
-    </div>
-    <div class="w-75 p-3">
-      <h4 class="my-2"><b>Dados Pessoais</b></h4>
-      <form>
-        <div class="row">
-          <div class="col-6">
-            <label for="floatingNomeCompleto" class="mt-1 mb-1 mr-1">Nome Completo</label>
-            <input type="text" class="form-control" id="floatingNomeCompleto" placeholder="Ex.: João da Silva Santos">
-          </div>
-          <div class="col-6">
-            <label for="floatingEmail" class="mt-1 mb-1 mr-1">Email</label>
-            <input type="email" class="form-control" id="floatingEmail" placeholder="Ex.: exemplo@gmail.com">
-          </div>
-          <div class="col-6">
-            <label for="floatingTelefone" class="mt-1 mb-1 mr-1">Telefone</label>
-            <input type="text" class="form-control" id="floatingTelefone" placeholder="Ex.: (xx) xxxxx-xxxx">
-          </div>
-          <div class="col-6">
-            <label for="floatingGenero" class="mt-1 mb-1 mr-1">Gênero</label>
-            <select class="form-control form-control2" id="floatingGenero">
-              <option selected>Selecione</option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-        </div>
-        <h4 class="my-2"><b>Endereço</b></h4>
-        <div class="row">
-          <div class="col-4">
-            <label for="floatingCEP" class="mt-1 mb-1 mr-1">CEP</label>
-            <input type="text" class="form-control" id="floatingCEP" placeholder="Ex.: 76.986-125">
-          </div>
-          <div class="col-8">
-            <label for="floatingEndereco" class="mt-1 mb-1 mr-1">Endereço</label>
-            <input type="text" class="form-control" id="floatingEndereco" placeholder="Ex.: Av. das Araras">
-          </div>
-          <div class="col-2">
-            <label for="floatingNumero" class="mt-1 mb-1 mr-1">Número</label>
-            <input type="text" class="form-control" id="floatingNumero" placeholder="Ex.: 26">
-          </div>
-          <div class="col-10">
-            <label for="floatingComplemento" class="mt-1 mb-1 mr-1">Complemento</label>
-            <input type="text" class="form-control" id="floatingComplemento" placeholder="Ex.: Apto 206 Bloco K">
-          </div>
-          <div class="col-4">
-            <label for="floatingBairro" class="mt-1 mb-1 mr-1">Bairro</label>
-            <input type="text" class="form-control" id="floatingBairro" placeholder="Ex.: Taguatinga">
-          </div>
-          <div class="col-4">
-            <label for="floatingCidade" class="mt-1 mb-1 mr-1">Cidade</label>
-            <input type="text" class="form-control" id="floatingCidade" placeholder="Ex.: Brasília">
-          </div>
-          <div class="col-4">
-            <label for="floatingUF" class="mt-1 mb-1 mr-1">DF</label>
-            <select class="form-control form-control2" id="floatingUF">
-              <option selected>Selecione</option>
-              <option value="df">DF</option>
-              <option value="go">GO</option>
-            </select>
-          </div>
-        </div>
-        <h4 class="my-2"><b>Forma de pagamento</b></h4>
-        <div class="row">
-          <div class="col-12">
-            <label for="floatingNomeTitular" class="mt-1 mb-1 mr-1">Nome do titular</label>
-            <input type="text" class="form-control" id="floatingNomeTitular" placeholder="Ex.: Luan M Gomes">
-          </div>
-          <div class="col-6">
-            <label for="floatingNumeroCartao" class="mt-1 mb-1 mr-1">Número do cartão</label>
-            <input type="text" class="form-control" id="floatingNumeroCartao" placeholder="Ex.: 5423 5637 4598 1234">
-          </div>
-          <div class="col-3">
-            <label for="floatingCVV" class="mt-1 mb-1 mr-1">CVV</label>
-            <input type="text" class="form-control" id="floatingCVV" placeholder="Ex.: 564">
-          </div>
-          <div class="col-3">
-            <label for="floatingDataVencimento" class="mt-1 mb-1 mr-1">Data de vencimento</label>
-            <input type="text" class="form-control" id="floatingDataVencimento" placeholder="Ex.: 11/27">
-          </div>
-        </div>
-        <div>
-          <input class="btn btn-primary mt-2 float-end" type="submit" value="Submit">
-        </div>
-      </form>
-    </div>
-  </div>
 
 
 

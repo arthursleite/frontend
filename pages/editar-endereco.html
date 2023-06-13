@@ -49,35 +49,69 @@
     </div>
   </header>
 
-  <nav class="nav nav-pills nav-justified mt-3 mb-3"> <a class="nav-link" href="anuncios.html">Meus Anúncios</a> <a
-      class="nav-link active " href="compras.html">Compras</a> <a class="nav-link "
-      href="doacoes-atualizadas.html">Doações</a> </nav>
+
+  <div class="container">
+
+    <h1>Endereço</h1>
+
+    <div class="containerbox ">
 
 
-
-  <div class="d-flex container justify-content-around">
-    <div class="w-25 p-3 border border-dark"> <img src="../assets/foto-perfil-exemplo.png" alt="Icone de foto de perfil"
-        class="w-75"> <a href="index.html" class="btn btn-primary btn-lg p-2 m-2">Excluir conta</a> </div>
-    <div class="w-75 p-3 border border-dark">
-      <form>
-        <div class="form-group"> <label for="floatingNomeCompleto" class="mt-1 mb-1 mr-1">Nome Completo</label>
-          <input type="text" class="form-control" id="floatingNomeCompleto" placeholder="Ex.: João da Silva Santos">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">UF</label>
+          <input type="UF" class="form-control" id="inputUF">
         </div>
-        <div class="form-group"> <label for="floatingEmail" class="mt-1 mb-1 mr-1">Email</label> <input type="email"
-            class="form-control" id="floatingEmail" placeholder="Ex.: exemplo@gmail.com">
-        </div>
-        <div class="form-group">
-
-
-        </div>
-        <div class="w-75 p-3 border border-dark">
-
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">CIDADE</label>
+          <input type="text" class="form-control" id="inputCity">
         </div>
 
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="inputAddress2">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">COMPLEMENTO</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputZip" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Salvar como endereço principal
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Salvar</button>
+
+        </div>
+      </form>
 
 
-        </main>
+      <div class="containerboxx ">
 
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31797687.96452911!2d-73.0769095094537!3d-13.378003783073062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-PT!2sbr!4v1686454154368!5m2!1spt-PT!2sbr"
+          width="440" height="469" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+      </div>
 
+    </div>
+
+  </div>
 </body>
+<!-- Header deslogada-->
