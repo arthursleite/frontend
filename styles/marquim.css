@@ -1,4 +1,10 @@
 body {
+  background: #f6f6f6;
+  font-family: 'Lato', sans-serif;
+}
+
+
+body {
     background: #004977;
     background: linear-gradient(to right, #004977, #004977 );
   }
@@ -21,10 +27,7 @@ body {
     background-color: #3b5998;
   }
   
-  body {
-    background: #f6f6f6;
-    font-family: 'Lato', sans-serif;
-  }
+
   
   body > header {
     background: #111;
